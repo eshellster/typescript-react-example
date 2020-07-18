@@ -1,18 +1,10 @@
 import React from "react";
-import { Counter } from "./Counter";
+import Form from "./hooks/Form";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Counter>
-        {(count, setCount) => (
-          <div>
-            <button onClick={() => setCount(count - 1)}>-</button>
-            {count}
-            <button onClick={() => setCount(count + 1)}>+</button>
-          </div>
-        )}
-      </Counter>
+      <Form />
     </div>
   );
 };
